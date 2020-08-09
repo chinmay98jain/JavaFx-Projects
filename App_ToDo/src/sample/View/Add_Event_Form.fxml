@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Add_formController">
+   <children>
+      <TextField fx:id="Taskwork" layoutX="211.0" layoutY="61.0" prefHeight="26.0" prefWidth="326.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="Descr_box" layoutX="210.0" layoutY="114.0" prefHeight="75.0" prefWidth="326.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <Button fx:id="Add_button" layoutX="238.0" layoutY="224.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="79.0" text="ADD">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Label alignment="CENTER" layoutX="124.0" layoutY="61.0" prefHeight="26.0" prefWidth="60.0" text="Task">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="76.0" layoutY="114.0" prefHeight="26.0" prefWidth="116.0" text="Description">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="listButton" layoutX="366.0" layoutY="224.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="132.0" text="View Task List">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

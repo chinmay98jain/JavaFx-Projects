@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #9C27B0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AddController">
+   <effect>
+      <InnerShadow />
+   </effect>
+   <children>
+      <AnchorPane fx:id="rootPane" layoutY="100.0" prefHeight="299.0" prefWidth="700.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label fx:id="Warn" alignment="CENTER" layoutX="160.0" layoutY="76.0" prefHeight="48.0" prefWidth="390.0" text="Add event or View Events...!!!">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="Add" fitHeight="100.0" fitWidth="150.0" layoutX="285.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/icon_add.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="297.0" layoutY="25.0" prefHeight="48.0" prefWidth="146.0" text="ToDo" textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold Italic" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="out" layoutX="616.0" layoutY="25.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="70.0" text="LogOut" />
+   </children>
+</AnchorPane>

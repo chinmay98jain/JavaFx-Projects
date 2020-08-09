@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #9C27B0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ListController">
+   <children>
+      <AnchorPane layoutY="86.0" prefHeight="314.0" prefWidth="700.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ListView fx:id="ListBox" layoutX="375.0" layoutY="6.0" prefHeight="304.0" prefWidth="312.0" style="-fx-background-color: #E0E0E0;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ListView>
+            <TextField fx:id="TaskBox" layoutX="67.0" layoutY="61.0" prefHeight="26.0" prefWidth="252.0" promptText="Task">
+               <effect>
+                  <Glow />
+               </effect>
+            </TextField>
+            <TextField fx:id="DescBox" layoutX="67.0" layoutY="125.0" prefHeight="57.0" prefWidth="252.0" promptText="Description">
+               <effect>
+                  <Glow />
+               </effect>
+            </TextField>
+            <Button fx:id="AddButton" alignment="CENTER" layoutX="147.0" layoutY="214.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="92.0" text="ADD">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="301.0" layoutY="21.0" prefHeight="45.0" prefWidth="98.0" text="ToDo" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="Out" alignment="CENTER" layoutX="602.0" layoutY="14.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="84.0" text="LogOut">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
